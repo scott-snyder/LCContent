@@ -1,0 +1,6 @@
+Bottom: c819c52f717c16e668cea08e305f4f355f5b8d82
+Top:    c819c52f717c16e668cea08e305f4f355f5b8d82
+Author: scott snyder <sss@karma>
+Date:   2020-09-01 10:55:45 -0400
+
+Fix compilation errors: Don't use * operator with bool types.
