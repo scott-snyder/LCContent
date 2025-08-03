@@ -1,6 +1,6 @@
 # cmake file for building LCContent
 #-------------------------------------------------------------------------------------------------------------------------------------------
-cmake_minimum_required(VERSION 2.8.2 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.10 FATAL_ERROR)
 
 if(${CMAKE_SOURCE_DIR} STREQUAL ${CMAKE_BINARY_DIR})
     message(FATAL_ERROR "LCContent requires an out-of-source build.")
@@ -17,6 +17,8 @@ set(${PROJECT_NAME}_VERSION_MAJOR 03)
 set(${PROJECT_NAME}_VERSION_MINOR 01)
 set(${PROJECT_NAME}_VERSION_PATCH 08)
 set(${PROJECT_NAME}_VERSION "${${PROJECT_NAME}_VERSION_MAJOR}.${${PROJECT_NAME}_VERSION_MINOR}.${${PROJECT_NAME}_VERSION_PATCH}")
+
+cmake_policy(SET CMP0033 OLD)
 
 #-------------------------------------------------------------------------------------------------------------------------------------------
 # Dependencies
